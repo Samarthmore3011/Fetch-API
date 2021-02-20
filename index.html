@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <title>Get Method</title>
+        <style>
+            .align{
+                text-align:centre;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 class="align">JavaScript's Fetch API</h1>
+        <h2 class="align">Get method</h2>
+        <script>
+            fetch('https://jsonplaceholder.typicode.com/todos/')
+            .then(response =>response.json())
+            .then(data =>console.log(data))
+        </script>
+    </body>
+</html>
